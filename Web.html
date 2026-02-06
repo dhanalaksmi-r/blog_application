@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="Web.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Page</h2>
+        <form id="myform" onsubmit="return validate()" enctype="multipart/form-data">
+        <label for="">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your Name">
+        <span id="nameError" class="error"></span>
+
+        <label for="">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your Email">
+        <span id="emailError" class="error"></span>
+
+        <label for="">Phone Number</label>
+        <input type="tel" name="phone" id="phone" placeholder="Enter your Phone Number">
+        <span id="phoneError" class="error"></span>
+
+        <label for="">Password</label>
+        <input type="password" name="password" id="password" placeholder="Enter Password">
+        <span id="passwordError" class="error"></span>
+
+        <label for="">Confirm Password</label>
+        <input type="password" name="confirm_password" id="confirmpassword" placeholder="Confirm Password">
+        <span id="confirmpasswordError" class="error"></span>
+
+        <label for="">Upload Photo</label>
+        <input type="file" name="photo" id="photo">
+        <span id="fileError" class="error"></span>
+
+        <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="Web.js"></script>
+</body>
+</html>
