@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #f2f0ff;
+}
+
+/* Navbar */
+.navbar {
+    background: #fff;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nav-links a {
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.required {
+    color: red;
+}
+.btn, .btn-outline {
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+/*.btn-outline:hover{
+    background-color: #2563eb;
+    color: white;
+}
+*/
+.btn {
+    background: #2563eb;
+    color: rgb(255, 255, 255);
+}
+
+.btn-outline {
+    background:  #2563eb;
+    color: rgb(255, 255, 255);
+}
+
+/* Main Container */
+.container {
+    color:#333;
+    max-width: 800px;
+    background: #fff;
+    margin: 60px auto;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    font-size: 14px;
+    margin-top: 15px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Topics */
+.topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.topics button {
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: none;
+    background: #f1f1f1;
+    cursor: pointer;
+}
+
+.topics button.active {
+    background: #2563eb;
+    color: white;
+}
+
+/* Buttons */
+.submit-btn {
+    width: 100%;
+    margin-top: 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.login-btn {
+    width: 60%;        /* reduce button length */
+    margin: 25px auto 0;
+    display: block;
+   
+}
+
+/* Switch link */
+.switch {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.switch a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+/* Active link */
+.active-link {
+    background: #e0e7ff;
+    padding: 8px 14px;
+    border-radius: 8px;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 40px 20px 40px;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.hero p {
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Categories */
+.categories {
+    max-width: 1100px;
+    margin: auto;
+    padding: 10px 20px;
+}
+
+.categories h2 {
+    margin-bottom: 25px;
+    margin-left: 55px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Card */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.07);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card h3 {
+    margin-top: 15px;
+}
+
+.card p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Icons */
+.icon {
+    width: 55px;
+    height: 55px;
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+}
+
+.travel { background: #38bdf8; }
+.tech { background: rgb(207,66,63); }
+.politics { background: rgba(26, 25, 25, 0.479) }
+.psychology { background: hsla(147,47%,46%,0.986); }
+.business { background: rgb(235,122,20);}
+.lifestyle { background: rgb(231,105,200); }
+
+/* CTA */
+.cta {
+    background: #f1f5ff;
+    text-align: center;
+    padding: 20px 20px;
+    margin-top: 50px;
+    border-radius: 16px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
